@@ -1,23 +1,6 @@
 <script setup lang="ts">
 // @ts-nocheck
 
-// const { name } = toRefs(props)
-// const currentIcon = computed(() =>
-//   defineAsyncComponent({
-//     loader: () => import(`~/assets/icons/${props.name}.svg`),
-//     loadingComponent: {
-//       template: "<span></span>",
-//     },
-//     errorComponent: {
-//       template: "<span>error</span>",
-//     },
-//     delay: 200,
-//     timeout: 3000,
-//     suspensible: true,
-//   })
-// );
-// const attrs = useAttrs();
-
 const props = defineProps<{
   name: string
   class: string
@@ -48,6 +31,4 @@ onMounted(async () => {
 
 <template>
   <span ref="icon" />
-  <!--template v-html="icon" class="" /-->
-  <!--component :is="currenticon" :class="attrs.class" /-->
 </template>

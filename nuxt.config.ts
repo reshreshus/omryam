@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["nuxt-icons"],
+  modules: ['@pinia/nuxt'],
   vite: {
     css: {
       // preprocessorOptions: {
@@ -10,11 +10,11 @@ export default defineNuxtConfig({
       // }
     },
   },
-  css: ["~/assets/styles/tailwind.css"],
+  css: ['~/assets/styles/tailwind.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-});
+})
