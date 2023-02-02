@@ -2,6 +2,7 @@
   <header class="py-5">
     <h1>I am a header</h1>
     <base-icon name="test/nelogo" class="w-[100px] inline-block" />
+    <modal-login />
   </header>
 </template>
 
